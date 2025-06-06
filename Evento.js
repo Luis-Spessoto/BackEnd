@@ -21,7 +21,7 @@ class Evento {
             console.log("Evento Inserido:", result.insertedId);
             client.close();
         } catch (error) {
-            console.log("Erro ao inserir o evento: " + error);
+            logger.log("Erro ao inserir eventos: " + error);
         }
     }
 
@@ -33,7 +33,7 @@ class Evento {
             console.log("Evento atualizados:", result.modifiedCount);
             client.close();
         } catch (error) {
-            Logger.log("Erro ao atualizar eventos: " + error);
+            logger.log("Erro ao atualizar eventos: " + error);
         }
     }
 
@@ -59,7 +59,7 @@ class Evento {
             console.log("Eventos deletados:", result.deletedCount);
             client.close();
         } catch (error) {
-            Logger.log("Erro ao deletar eventos: " + error);
+            logger.log("Erro ao deletar eventos: " + error);
         }
     }
 }

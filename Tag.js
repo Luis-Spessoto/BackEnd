@@ -19,7 +19,7 @@ class Tags {
             console.log("Tag Inserida:", result.insertedId);
             client.close();
         } catch (error) {
-            console.log("Erro ao inserir a Tag:", error);
+            logger.log("Erro ao inserir tags: " + error);
         }
     }
 
@@ -31,7 +31,7 @@ class Tags {
             console.log("Tags atualizadas:", result.modifiedCount);
             client.close();
         } catch (error) {
-            Logger.log("Erro ao atualizar tags: " + error);
+            logger.log("Erro ao atualizar tags: " + error);
         }
     }
 
@@ -57,7 +57,7 @@ class Tags {
             console.log("Tags deletadas:", result.deletedCount);
             client.close();
         } catch (error) {
-            Logger.log("Erro ao deletar tags: " + error);
+            logger.log("Erro ao deletar tags: " + error);
         }
     }
 }

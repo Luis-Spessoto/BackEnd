@@ -20,7 +20,7 @@ class Usuario {
             console.log("Usuário Inserido:", result.insertedId);
             client.close();
         } catch (error) {
-            console.log("Erro ao inserir o Usuario:", error);
+            logger.log("Erro ao inserir usuarios: " + error);
         }
     }
 
@@ -32,7 +32,7 @@ class Usuario {
             console.log("Usuarios atualizados:", result.modifiedCount);
             client.close();
         } catch (error) {
-            Logger.log("Erro ao atualizar usuarios: " + error);
+            logger.log("Erro ao atualizar usuarios: " + error);
         }
     }
 
@@ -58,7 +58,7 @@ class Usuario {
             console.log("Usuarios deletados:", result.deletedCount);
             client.close();
         } catch (error) {
-            Logger.log("Erro ao deletar usuarios: " + error);
+            logger.log("Erro ao deletar usuarios: " + error);
         }
     }
 }
