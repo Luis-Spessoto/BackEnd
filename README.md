@@ -6,10 +6,11 @@ Projeto de BackEnd utilizando NodeJS e MongoDB - Desenvolvimento de uma agenda e
 
 # Navegação
 <ul>
-  <li><a href="app.js">Evento</a></li>
+  <li><a href="app.js">App para Testes</a></li>
   <li><a href="Evento.js">Evento</a></li>
   <li><a href="Tag.js">Tag</a></li>
   <li><a href="Usuario.js">Usuário</a></li>
+  <li><a href="projeto.js">Projeto [conexão MongoDB]</a></li>
 </ul>
 
 # Integrantes do grupo: <br>
