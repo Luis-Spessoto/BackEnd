@@ -1,2 +1,3 @@
 [2025-05-23T01:22:54.796Z] - Erro ao atualizar eventos: MongoServerError: Modifiers operate on fields but we found type null instead. For example: {$mod: {<field>: ...}} not {$set: null}
 [2025-05-23T01:23:10.190Z] - Erro ao atualizar eventos: MongoServerError: Modifiers operate on fields but we found type null instead. For example: {$mod: {<field>: ...}} not {$set: null}
+

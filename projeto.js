@@ -1,4 +1,6 @@
 const { MongoClient } = require("mongodb"); //para conectar ao bando de dados mongo db
+const Logger = require("./logger");  // Importação do Logger
+
 
 const url = "mongodb://localhost:27017";
 
@@ -26,6 +28,7 @@ async function run() {
         console.log("Collections disponíveis no MongoDB:", collections.map(c => c.name));
     } catch (err) {
         console.error("Erro ao conectar ao MongoDB:", err);
+        Logger.log(`Erro ao conectar ao MongoDB: ${err}`);
     } finally {
         await client.close();
     }

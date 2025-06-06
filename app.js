@@ -1,3 +1,5 @@
+//Luís Felipe Spessoto - 2648016
+
 const Evento = require("./evento");
 const Usuario = require("./Usuario");
 const Tag = require("./Tag");
