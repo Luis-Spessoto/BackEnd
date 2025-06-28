@@ -2,15 +2,12 @@
 BackEnd - Agenda Eletrônica
 
 # Descrição
-Projeto de BackEnd utilizando NodeJS e MongoDB - Desenvolvimento de uma agenda eletrônica
+Projetos de BackEnd utilizando NodeJS e MongoDB - Desenvolvimento de uma agenda eletrônica, e Express para uma página de login e acesso a outra secreta
 
 # Navegação
 <ul>
-  <li><a href="app.js">App para Testes</a></li>
-  <li><a href="Evento.js">Evento</a></li>
-  <li><a href="Tag.js">Tag</a></li>
-  <li><a href="Usuario.js">Usuário</a></li>
-  <li><a href="projeto.js">Projeto [conexão MongoDB]</a></li>
+  <li><a href="Projeto 01">Projeto 01</a></li>
+  <li><a href="Projeto 02">Projeto 02</a></li>
 </ul>
 
 # Integrantes do grupo: <br>
