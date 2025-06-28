@@ -1,0 +1,60 @@
+<body id="index">
+    <div class="container">
+        <h1>👋 Olá!</h1>
+        <p>Você está logado com sucesso.</p>
+        <section id="calculadora">
+            <h2>🧮 Calculadora</h2>
+            <input type="number" id="num1" placeholder="Número 1">
+            <input type="number" id="num2" placeholder="Número 2">
+            <br>
+            <button onclick="somar()">Somar</button> <button onclick="subtrair()">Subtrair</button>
+            <button onclick="multiplicar()">Multiplicar</button> <button onclick="dividir()">Dividir</button>
+            <p id="resultado"></p>
+        </section>
+
+        <hr>
+
+        <a href="/logout">🚪 Sair da conta</a>
+        <footer>
+            <p>
+                &copy ®SPESSOTO
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function somar() {
+            const a = parseFloat(document.getElementById('num1').value);
+            const b = parseFloat(document.getElementById('num2').value);
+            const res = a + b;
+            document.getElementById('resultado').innerText = isNaN(res)
+                ? "Digite dois números válidos."
+                : "Resultado: " + res;
+        }
+        function subtrair() {
+            const a = parseFloat(document.getElementById('num1').value);
+            const b = parseFloat(document.getElementById('num2').value);
+            const res = a - b;
+            document.getElementById('resultado').innerText = isNaN(res)
+                ? "Digite dois números válidos."
+                : "Resultado: " + res;
+        }
+        function multiplicar() {
+            const a = parseFloat(document.getElementById('num1').value);
+            const b = parseFloat(document.getElementById('num2').value);
+            const res = a * b;
+            document.getElementById('resultado').innerText = isNaN(res)
+                ? "Digite dois números válidos."
+                : "Resultado: " + res;
+        }
+        function dividir() {
+            const a = parseFloat(document.getElementById('num1').value);
+            const b = parseFloat(document.getElementById('num2').value);
+            const res = a / b;
+            document.getElementById('resultado').innerText = isNaN(res)
+                ? "Digite dois números válidos."
+                : "Resultado: " + res;
+        }
+    </script>
+
+</body>

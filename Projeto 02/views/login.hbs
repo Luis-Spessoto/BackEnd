@@ -1,0 +1,42 @@
+<body id="login">
+    <div class="container">
+        <h1>
+            - Acesso - <br>
+            Login de Usuário
+        </h1>
+        <form action="/login" method="post">
+            <label>Usuário [Username]:</label>
+            <input type="text" name="usuario" required><br><br>
+
+            <label>Senha [Password]:</label>
+            <input type="password" name="senha" required><br><br>
+
+            <input type="submit" value="Entrar" id="btEntrar">
+        </form>
+        <div id="mensagem">
+            <h4>ℹ️ Como funciona</h4>
+            <p>
+                🔢 Insira Login e Senha...<br>
+                🎯 E seja Bem Vindo(a)!!!.<br>
+                <br><br>
+                ⓘ Login e Senha foram criados no arquivo criarUsuarioTeste [que cria um usuario no MongoDB]<br>
+                ⓘ admin - 123
+            </p>
+            <button onclick="fecharPopUp()">Fechar</button>
+        </div>
+        <button id="mensagemBT" onclick="abrirPopUp()">❓Mensagem</button>
+    </div>
+
+</body>
+
+<script>
+    function fecharPopUp() {
+        document.getElementById("mensagem").style.display = "none";
+        document.getElementById("mensagemBT").style.display = "block";
+    }
+
+    function abrirPopUp() {
+        document.getElementById("mensagem").style.display = "block";
+        document.getElementById("mensagemBT").style.display = "none";
+    }
+</script>

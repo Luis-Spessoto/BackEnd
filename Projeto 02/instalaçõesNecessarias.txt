@@ -1,0 +1,12 @@
+1. npm install express
+2. npm install express-session
+3. npm install cookie-parser
+4. npm install body-parser
+5. npm install mongodb
+6. npm install bcryptjs 
+7. npm install express-handlebars
+8. npm install hbs
+9. npm install mongoose
+
+
+mongodb: mongodb://localhost:27017/mvcLogin
